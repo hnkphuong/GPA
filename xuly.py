@@ -7,7 +7,7 @@ def tinhgpa(dsdiem,dstinchi):
         gpa=tongdiem/tongtinchi
     return gpa
 
-def xeploai(gpa):
+def xeploai(gpa)
     if 9<=gpa<=10:
         return "Xuất sắc"
     elif 8<=gpa<9:
