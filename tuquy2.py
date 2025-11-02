@@ -27,7 +27,7 @@ class GiaodienChinh(QMainWindow):
             self.tong_tinchi += tinchi
 
             # tính GPA (làm tròn đến 2 chữ số thập phân)
-             gpa = round(self.tong_diem / self.tong_tinchi,2)
+            gpa = round(self.tong_diem / self.tong_tinchi,2)
 
             # hiển thị kết quả ra ô output
             self.ui.lnekq.setText(str(gpa))
