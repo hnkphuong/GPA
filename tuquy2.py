@@ -32,6 +32,20 @@ class GiaodienChinh(QMainWindow):
             # hiển thị kết quả ra ô output
             self.ui.lnekq.setText(str(gpa))
 
+            # phân loại học lực
+            if 9<=gpa<=10:
+                self.ui.lnekq_2.setText("Xuất sắc")
+            elif 8<=gpa<9:
+                self.ui.lnekq_2.setText("Giỏi")
+            elif 7<=gpa<8:
+                self.ui.lnekq_2.setText("Khá")
+            elif 5<=gpa<7:
+                self.ui.lnekq_2.setText("Trung bình")
+            elif 4<=gpa<5:
+                self.ui.lnekq_2.setText("Yếu")
+            else:
+                self.ui.lnekq_2.setText("Kém")
+
             # xoá ô nhập sau khi thêm điểm và tín chỉ
             self.ui.lnediem.clear()
             self.ui.lnetinchi.clear()
@@ -45,7 +59,8 @@ class GiaodienChinh(QMainWindow):
         # reset toàn bộ dữ liệu
         self.tong_diem = 0
         self.tong_tinchi = 0
-        self.ui.lnekq.setText("0")
+        self.ui.lnekq.setText(" ")
+        sel.ui.lnekq_2.setText(" ")
         self.ui.lnediem.clear()
         self.ui.lnetinchi.clear()
 
